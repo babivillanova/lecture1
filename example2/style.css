@@ -17,6 +17,10 @@ tfoot {
     color: #fff;
 }
 
+img {
+    width: 12px; /* set image width */
+}
+
 /* uncomment to style cells */
 /* td {
     width: 40px;
