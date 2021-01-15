@@ -40,11 +40,6 @@ function makeRows() {
       //const cell = document.createElement( 'td' )
       //cell.innerText = i + ',' + j
 
-      // teste babi 
-      img id="myImage"
-        alt="Black hole - Messier 87 crop max res"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1024px-Black_hole_-_Messier_87_crop_max_res.jpg">
-
       // uncomment to generate a random background color for cell on mouseover
       // const color = Math.floor( Math.random() * 16777215 ).toString( 16 )
 
