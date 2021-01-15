@@ -14,14 +14,28 @@ function makeRows() {
     table.remove()
   }
 
-  private Table createComplexExampleTable() throws IOException {
+  table = document.createElement( 'table' )
+  table.id = 'table'
+  document.body.appendChild( table )
 
-    return Table.builder()
-            .addColumnsOfWidth(50, 100, 40, 70, 120)
-            .borderColor(WHITE)
-            .textColor(DARK_GRAY)
-            .fontSize(7)
-            .font(HELVETICA)
+  const columns = x_slider.valueAsNumber
+  const rows = y_slider.valueAsNumber
 
+  document.getElementById( 'x_label' ).innerHTML = "bem me quer"
+  document.getElementById( 'y_label' ).innerHTML = "mal me quer"
 
+  for ( i = 0; i < rows; i ++ ) {
+  
+     const row = document.createElement( 'tr' )
+    table.appendChild( row )
+
+    for ( j = 0; j < columns; j ++ ) {
+
+        const cell = document.createElement( 'td' )
+      cell.innerText = i + ',' + j
+
+      row.appendChild( cell )
+
+    }
+}
 }
