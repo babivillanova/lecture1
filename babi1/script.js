@@ -21,8 +21,8 @@ function makeRows() {
   const columns = x_slider.valueAsNumber
   const rows = y_slider.valueAsNumber
 
-  document.getElementById( 'x_label' ).innerHTML = "bem me quer"
-  document.getElementById( 'y_label' ).innerHTML = "mal me quer"
+  document.getElementById( 'x_label' ).innerHTML = "x"
+  document.getElementById( 'y_label' ).innerHTML = "y"
 
   for ( i = 0; i < rows; i ++ ) {
   
@@ -32,10 +32,16 @@ function makeRows() {
     for ( j = 0; j < columns; j ++ ) {
 
         const cell = document.createElement( 'td' )
-      cell.innerText = i + ',' + j
+      
+        for (|i + j| = 0) {
+            cell.innerText = "bem me quer"
+            else {
+             cell.innerText = "mal me quer"
+            }
+        }
 
       row.appendChild( cell )
 
     }
-}
+  }
 }
