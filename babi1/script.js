@@ -33,12 +33,14 @@ function makeRows() {
 
         const cell = document.createElement( 'td' )
       
-        for (|i + j| = 0) {
+        if ((i + j) % 2 == 0) {
             cell.innerText = "bem me quer"
+        }
             else {
              cell.innerText = "mal me quer"
             }
-        }
+        
+        
 
       row.appendChild( cell )
 
