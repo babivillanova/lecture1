@@ -72,8 +72,7 @@ function getRandomImageUrl() {
 
     "https://www.pngfind.com/pngs/m/619-6193865_triangle-rouge-png-half-square-png-transparent-png.png",
     "https://d2culxnxbccemt.cloudfront.net/quilt/content/uploads/2020/02/28141256/HST-Image-scaled.jpg" ,
-     "http://www.aqsblog.com/wp-content/uploads/2018/12/2018-block-4-hst--150x150.jpg",
-     "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Orienteering_symbol_framed.png/220px-Orienteering_symbol_framed.png",
+   "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Orienteering_symbol_framed.png/220px-Orienteering_symbol_framed.png",
   ]
   return urls[Math.floor(Math.random() * urls.length)];
 }
